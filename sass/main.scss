@@ -1,0 +1,828 @@
+@import "compass";
+@import "_reset";
+@import "_icons";
+@import "_fonts";
+@import "_vars";
+
+//@include edit;
+
+/* BASIC STYLES
+-------------------------------------------------------------- */
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+  img{
+    max-width: 100%;
+    height: auto;
+    
+  }
+}
+
+body{
+  font: 16px/1.5 $font_main;
+  background-color: $color-bg;  
+  color: $color-text;
+  background: url(../images/MHC-bg-white.jpg) fixed;
+
+}
+
+a{
+  @include link_color;
+  @extend .trans-all;
+
+  text-decoration: none;
+}
+
+h1,
+h2{
+	font-family: $font_header;
+
+	a{
+
+	}
+}
+
+h1{
+	font-size: 48px;
+  font-weight: 100;
+}
+
+.bg-right{
+  background: url(../images/MHC-bg-green.jpg);
+  position: fixed;
+  height: 120vh;
+  width: 200px;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+}
+
+.bg-left{
+  background: url(../images/MHC-bg-blue.jpg);
+  position: fixed;
+  height: 100vh;
+  width: 60px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  @include bp(s){
+    width: 10px;
+  }
+}
+
+.leaves{
+  //background: url(../images/MHC-leaves.png) top right no-repeat;
+  //background-position: contain;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  text-align: right;
+  opacity: .4;
+
+  @include bp(m){
+    opacity: .2;
+  }
+
+  img{
+    height: 100vh;
+    width: auto;
+  }
+}
+
+
+/* HEADER
+-------------------------------------------------------------- */
+#header{
+  background: url(../images/MHC-bg-brown.jpg);
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+   @include bp(s){
+    height: auto;
+    line-height: normal;
+  }
+
+  a{
+    color: $color-bg;
+  }
+}
+
+#logo{
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background-color: darken($color-primary, 10%);
+
+   @include bp(s){
+   // float: left;
+  }
+}
+
+#nav-main{
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  top: 0;
+  left: 0;
+  
+  @include bp(s){
+    height: auto;
+    line-height: normal;
+    position: relative;
+    display: none;
+
+    &.nav-open{
+      display: block;
+    }
+    //padding-top: 20px;
+  }
+
+
+  ul{
+    text-align: center;
+
+    @include bp(m){
+      text-align: left;
+      margin-left: 80px;
+    }
+
+    @include bp(s){
+      text-align: center;
+      margin-left: 0;
+    }
+  }
+
+  li{
+    @include inline-block;
+    margin: 0 10px;
+
+    @include bp(s){
+      display: block;
+      text-align: center;
+    }
+
+    a{
+      display: block;
+      font-family: $font_header;
+      font-size: 18px;
+      letter-spacing: 1px;
+
+      @include bp(m){
+        font-size: 14px;
+      }
+
+      @include bp(s){
+        padding: 10px 0;
+      }
+
+      &:hover, &.active{
+        span{
+          border-bottom: $color-accent dashed 1px;
+        }
+      }
+    }
+  }
+
+  .social-icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+
+    @include bp(s){
+      position: relative;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    a{
+      padding: 0 10px;
+
+      @include bp(m){
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+#menu-toggle{
+  display: none;
+  width: 60px;
+  height: 60px;
+  color: $color-bg;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+
+  .icon-list{
+    height: 100%;
+    line-height: 60px;
+    font-size: 30px;
+  }
+
+  @include bp(s){
+    display: block;
+  }
+}
+
+#main{
+  margin-top: 60px;
+}
+
+
+/* SECTION
+-------------------------------------------------------------- */
+section{
+  @include pie-clearfix;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 0 80px;
+
+  @include bp(s){
+    padding: 0 10px 0 20px;
+    margin-bottom: 40px;
+  }
+
+  h1{
+    border-bottom: $border-dashed;
+    margin-bottom: 20px;
+  }
+
+  p{
+    margin-bottom: 40px;
+  }
+
+  .body{
+   
+
+    p,
+    h1{
+       max-width: 600px;
+    }
+  }
+
+  .pull{
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: $font_header;
+  }
+}
+
+
+
+/* INTRO
+-------------------------------------------------------------- */
+#intro{
+  @include pie-clearfix;
+  padding: 60px 40px;
+  
+  @include bp(s){
+    padding: 20px;
+   }
+
+  .logo{
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-right: 20px;
+   // mix-blend-mode: multiply;
+   // 
+   @include bp(l){
+    width: 200px;
+    height: 200px;
+   }
+
+   @include bp(s){
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    float: none;
+    margin: 0 auto;
+   }
+  }
+
+  .title{
+    font-size: 80px;
+    font-family: $font_header;
+    text-transform: uppercase;
+    line-height: 80px;
+    float: left;
+    margin-top: 160px;
+
+    @include bp(l){
+      font-size: 60px;
+      line-height: 60px;
+      margin-top: 80px;
+     }
+
+     @include bp(s){
+      font-size: 30px;
+      line-height: 30px;
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+     }
+  }
+
+  .tagline{
+    font-family: $font_main;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-accent;
+    line-height: normal;
+    text-align: right;
+    margin-right: 80px;
+
+    @include bp(s){
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+
+/* WHY
+-------------------------------------------------------------- */
+#why{
+
+  .image-1,
+  .image-2{
+    opacity: .8;
+  }
+
+  .body{
+    max-width: 600px;
+    width: 60%;
+    padding-right: 40px;
+    float: left;
+
+    @include bp(m){
+      float: none;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .image-1{
+    margin-bottom: 40px;
+  }
+
+  .image-2{
+    float: right;
+    max-width: 400px;
+    margin-top: -80px;
+    width: 40%;
+
+    @include bp(m){
+      width: 40%;
+      margin-top: 20px;
+    }
+  }
+}
+
+/* INSIDE
+-------------------------------------------------------------- */
+#inside{
+  
+
+  .aside{
+    width: 50%;
+    float: left;
+
+    @include bp(m){
+      float: none;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  .body{
+    width: 50%;
+    float: left;
+    padding-left: 40px;
+    margin-top: 80px;
+    position: relative;
+    z-index: 100;
+    
+    @include bp(m){
+      float: none;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    @include bp(s){
+      padding: 0;
+    }
+  }
+
+  .product{
+    position: relative;
+    margin-bottom: 170px;
+
+    @include bp(s){
+      margin-bottom: 40px;
+    }
+
+    .bg{
+      width: 100%;
+      height: auto;
+      opacity: .8;
+    }
+
+    .tube{
+      position: absolute;
+      bottom: -180px;
+      left: 50%;
+      margin-left: -180px;
+      width: 350px;
+
+      @include bp(s){
+        width: 150px;
+        margin-left: -75px;
+        bottom: -60px;
+      }
+    }
+  }
+
+  .quote{
+    text-align: right;
+
+    p{
+      font-family: $font_header;
+      font-size: 30px;
+      margin-bottom: 0;
+
+      @include bp(s){
+        font-size: 20px;
+      }
+    }
+
+    .author{
+      font-size: 12px;
+    }
+
+    .divider{
+      background: url(../images/MHC-bg-green.jpg);
+      max-width: 350px;
+      height: 80px;
+      margin: 40px auto;
+    }
+  }
+
+  .ingredients{
+    border-top: $border-dashed;
+    padding: 20px 0;
+    position: relative;
+    z-index: 100;
+
+
+    .item{
+      margin-bottom: 40px;
+    }
+
+    h2{
+      font-size: 24px;
+    }
+
+    .info{
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .more{
+      font-size: 14px;
+      border-bottom: $color-primary solid 1px;
+    }
+  }
+}
+
+/* IMAGE DIVIDERS
+-------------------------------------------------------------- */
+#image-divider-1{
+  max-width: 1600px;
+  margin: 80px auto 160px;
+  padding: 80px 40px 0;
+  text-align: center;
+  
+  @include bp(s){
+    padding: 40px 20px;
+  }
+
+  img{
+    opacity: .8;
+  }
+
+
+}
+
+#image-divider-2{
+  max-width: 1600px;
+  margin: 80px auto 160px;
+  padding: 80px 40px 0;
+  text-align: center;
+
+  @include bp(m){
+    // float: none;
+    // width: 100%;
+    // max-width: 800px;
+    // margin: 0 auto;
+    // 
+    padding: 40px 20px;
+  }
+
+  .image-1, .image-2, .image-3{
+    width: 33.3%;
+    float: left;
+
+    @include bp(s){
+      width: 50%;
+    }
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .image-2{
+    margin: 200px -40px 0;
+
+    @include bp(s){
+      margin: 40px -10px;
+    }
+  }
+
+  .image-3{
+    margin-top: 60px;
+
+    @include bp(s){
+      margin-top: -60px;
+      margin-left: 80px;
+    }
+  }
+
+
+  img{
+    opacity: .8;
+  }
+}
+
+
+/* WHO
+-------------------------------------------------------------- */
+#who{
+
+  .body{
+    p, h1{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .image{
+    max-width: 800px;
+    margin: 0 auto 40px;
+
+    img{
+      width: 100%;
+      opacity: .8;
+    }
+  }
+}
+
+/* PURCHASE
+-------------------------------------------------------------- */
+#purchase{
+
+  .aside{
+    float: left;
+    width: 20%;
+
+    @include bp(s){
+      display: none;
+    }
+  }
+
+  .body{
+    margin: auto;
+    width: 80%;
+    float: left;
+    max-width: 500px;
+    border-bottom: $border-dashed;
+
+    @include bp(s){
+      width: 100%;
+    }
+  }
+
+  h1{
+    margin-bottom: 40px;
+  }
+
+  .product{
+    @include pie-clearfix;
+    clear: both;
+    padding: 20px 0;
+  }
+  
+  .product__quantity,
+  .product__price,
+  .product__cta{
+    float: left;
+    width: 33%;
+  }
+
+  .product__quantity,
+  .product__price{
+    font-size: 40px;
+    line-height: 40px;
+    font-family: $font_header;
+
+    @include bp(s){
+      font-size: 20px;
+      width: 25%;
+    }
+  }
+
+  .product__price{
+    //text-align: center;
+  }
+
+  .product__cta{
+    text-align: right;
+
+    @include bp(s){
+      width: 50%;
+    }
+
+    a{
+      text-transform: uppercase;
+      padding: 10px 20px;
+      background: url(../images/MHC-bg-green.jpg);
+    }
+  }
+
+  .save{
+    font-size: 12px;
+    font-family: $font_main;
+    line-height: normal;
+    color: lighten($color-primary, 10%)
+  }
+}
+
+
+/* FOOTER
+-------------------------------------------------------------- */
+.footer-top{
+  @include pie-clearfix;
+  position: relative;
+  color: $color-bg;
+  overflow: hidden;
+  padding: 80px;
+  padding-top: 160px;
+
+  @include bp(l){
+    padding-top: 100px;
+  }
+
+  @include bp(s){
+    padding: 20px;
+    padding-top: 80px;
+  }
+  
+  a{
+    color: $color-accent;
+
+    &:hover{
+      color: $color-bg;
+    }
+  }
+
+  h2{
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  .bg{
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    z-index: -1;
+    opacity: .9;
+    background: url(../images/MHC-bg-brown.jpg) fixed;
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    transform-origin: center right;
+  }
+
+  .inner{
+    @include pie-clearfix;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .logo-holder{
+    @include pie-clearfix;
+    float: left;
+
+    @include bp(m){
+      float: none;
+    }
+
+    .logo{
+      width: 200px;
+      height: 200px;
+      float: left;
+      margin-right: 20px;
+
+      @include bp(l){
+        width: 100px;
+        height: 100px;
+      }
+
+      
+    }
+
+    .title{
+      margin-top: 50px;
+      font-size: 60px;
+      font-family: $font_header;
+      line-height: 60px;
+      float: left;
+      text-transform: uppercase;
+
+      @include bp(l){
+        margin-top: 20px;
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      @include bp(s){
+        margin-top: 10px;
+      }
+    }
+
+    .tagline{
+      color: $color-accent;
+      font-size: 20px;
+      font-family: $font_main;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: normal;
+      text-align: right;
+      margin-right: 40px;
+    }
+  }
+
+
+  .body{
+    float: right;
+    text-align: right;
+
+    @include bp(m){
+      float: none;
+      text-align: left;
+    }
+  }
+
+  .social-icons{
+    a{
+      font-size: 30px;
+    }
+  }
+}
+
+.copy{
+   background: url(../images/MHC-bg-green.jpg);
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 14px;
+   letter-spacing: 1px;
+   padding: 20px;
+}
+
+
+
