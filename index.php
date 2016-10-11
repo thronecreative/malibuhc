@@ -17,12 +17,12 @@
 	<body>
 		<div class="bg-left"></div>
 		<!-- <div class="bg-right"></div> -->
-		<div class="leaves"><img src="/images/MHC-leaves.png" alt="Malibu Handcrafted Logo" /></div>
+		<div class="leaves"><img src="images/MHC-leaves.png" alt="Malibu Handcrafted Logo" /></div>
 		<div id="wrap">
 			 
 			<div id="header">
 				<div class="inner">
-					<div id="logo"><a href="/"><img src="/images/MHC-logo_cream.svg" alt="Malibu Handcrafted Logo" /></a></div>
+					<div id="logo"><a href="/"><img src="images/MHC-logo_cream.svg" alt="Malibu Handcrafted Logo" /></a></div>
 
 					<div id="nav-main">
 						<ul>
@@ -50,7 +50,7 @@
 				
 				<section id="intro" data-scroll-index="0">
 					<div class="inner">
-						<div class="logo"><img src="/images/MHC-logo_brown.svg" alt="" /></div>
+						<div class="logo"><img src="images/MHC-logo_brown.svg" alt="" /></div>
 						<div class="title">
 							Malibu<br />
 							Handcrafted
@@ -62,7 +62,7 @@
 
 				<section id="why" data-scroll-index="1">
 					<div class="inner">
-						<div class="image-1"><img src="/images/MHC-hero-1.jpg" alt="Beach" /></div>
+						<div class="image-1"><img src="images/MHC-hero-1.jpg" alt="Beach" /></div>
 						
 						<div class="body">
 							<h1>Why we exist.</h1>
@@ -76,7 +76,7 @@
 							<p>MHC Smooch is made with 5 simple plant based products whose active ingredients can only be found in nature.  
 Our ingredients, right down to the packaging are clean, natural and responsible.</p>
 						</div>
-						<div class="image-2"><img src="/images/MHC-girl-blanket.jpg" alt="Girl on beach with coconut" /></div>
+						<div class="image-2"><img src="images/MHC-girl-blanket.jpg" alt="Girl on beach with coconut" /></div>
 					</div>
 				</section>
 
@@ -84,8 +84,8 @@ Our ingredients, right down to the packaging are clean, natural and responsible.
 					<div class="inner">
 						<div class="aside">
 							<div class="product">
-								<img src="/images/MHC-palms-2.jpg" alt="" class="bg" />
-								<img src="/images/MHC-product-1.png" alt="" class="tube" />
+								<img src="images/MHC-palms-2.jpg" alt="" class="bg" />
+								<img src="images/MHC-product-1.png" alt="" class="tube" />
 							</div>
 							<div class="quote">
 								<p>"Malibu Handcrafted always leaves my lips feeling amazing. Quite simply the best lib balm I've ever used."</p>
@@ -131,7 +131,7 @@ Our ingredients, right down to the packaging are clean, natural and responsible.
 
 				<section id="image-divider-1">
 					<div class="inner">
-						<div class="image-1"><img src="/images/MHC-beach-2.jpg" alt="" /></div>
+						<div class="image-1"><img src="images/MHC-beach-2.jpg" alt="" /></div>
 						
 					</div>
 				</section>
@@ -143,9 +143,9 @@ Our ingredients, right down to the packaging are clean, natural and responsible.
 						<h1>Who we are.</h1>
 						<p>By the early age of 3 years old, my interest in beauty became apparent as I would sit on my mothers vanity table and watch her apply her makeup.  Shortly after, around the age of 4 or 5, I began applying her red lipstick to my lips, cheeks and surrounding areas. The older I became, the more fascinated I became with beauty, specifically with the lips. I developed an interest in anything that I could apply to my lips; i.e. chapstick, lip balm, lip gloss, and lipstick. </p>
 						<p>I was inspired by the transformation of lips when applying a touch of shine. From that point on my curiosity to try new products was cultivated and continues until this day.</p>
-						<div class="image"><img src="/images/MHC-candice-1.jpg" alt="" /></div>
+						<div class="image"><img src="images/MHC-candice-1.jpg" alt="" /></div>
 						<p>Malibu born and raised, I grew up on the beach and developed a love for the ocean. I have traveled and lived in various countries throughout the world and within those experiences I discovered  that I am most in my element when I am near the ocean. The beach has always been a place of natural health and healing. I chose to create a product that would not only be soothing and healthy, but would also transport people to a happy place. (Like the smell of sun tan oil on a warm sunny day)</p>
-						<div class="image"><img src="/images/MHC-chuck-candice.jpg" alt="" /></div>
+						<div class="image"><img src="images/MHC-chuck-candice.jpg" alt="" /></div>
 						<p>My interest in health and diet became elevated with the rise of cancer among my family and friends. I felt that it was important to contribute to a healthy lifestyle and well being, not just for myself, but for the betterment of society as a whole. So I created Malibu Hand Crafted Smooch lip balm and began to experiment with my own formulas using only five simple organic ingredients. With each batch I made sure that the integrity of the product was never compromised. After many attempts of trial and error, I found a winning combination containing the perfect amount of shine and consistency. I began using it and sharing it with my friends and family and now we are excited to share MHC smooch with you. </p>
 						</div>
 					</div>
@@ -153,16 +153,16 @@ Our ingredients, right down to the packaging are clean, natural and responsible.
 
 				<section id="image-divider-2">
 					<div class="inner">
-						<div class="image-1"><img src="/images/MHC-little-girl.jpg" alt="" /></div>
-						<div class="image-2"><img src="/images/MHC-girl-rocks.jpg" alt="" /></div>
-						<div class="image-3"><img src="/images/MHC-little-girls.jpg" alt="" /></div>
+						<div class="image-1"><img src="images/MHC-little-girl.jpg" alt="" /></div>
+						<div class="image-2"><img src="images/MHC-girl-rocks.jpg" alt="" /></div>
+						<div class="image-3"><img src="images/MHC-little-girls.jpg" alt="" /></div>
 					</div>
 				</section>
 
 				<section id="purchase" data-scroll-index="4">
 					<div class="inner">
 						<div class="aside">
-							<div class="image"><img src="/images/MHC-product-1.png" alt="" /></div>
+							<div class="image"><img src="images/MHC-product-1.png" alt="" /></div>
 						</div>
 
 						<div class="body">
@@ -199,7 +199,7 @@ Our ingredients, right down to the packaging are clean, natural and responsible.
 					<div class="bg"></div>
 					<div class="inner">
 						<div class="logo-holder">
-							<div class="logo" data-scroll-nav="0"><img src="/images/MHC-logo_cream.svg" alt="" /></div>
+							<div class="logo" data-scroll-nav="0"><img src="images/MHC-logo_cream.svg" alt="" /></div>
 							<div class="title">
 								Malibu<br />
 								Handcrafted
@@ -222,7 +222,7 @@ Our ingredients, right down to the packaging are clean, natural and responsible.
 					
 
 					<div class="copy">
-						
+						&copy; <?php echo date('Y'); ?> Malibu Handcrafted &mdash; Don't Steal. It's not nice.
 					</div>
 				</div>
 
